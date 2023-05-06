@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD COLLEGE PROJECT </title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@500&family=Varela+Round&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Project update/style.css">
+
+</head>
+
+
+<style>
+  
+  
+  
+  body{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Varela Round',sans-serif;       
+    }
+    header::before{
+        content: "";        
+        background: url('https://scontent.fnag10-1.fna.fbcdn.net/v/t1.6435-9/65203022_2375248042708441_1335316490651435008_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=36a2c1&_nc_ohc=2IFxkdXUPMgAX_iz3WB&_nc_oc=AQktiSC6genPEvfTWIPZ-eZTS3Pf30dwEC4tKRL7qZYUY4z0cfBFxma49cfslmaD6UQ&_nc_ht=scontent.fnag10-1.fna&oh=00_AfBp_QTsvlTv4lwLC8UiZu7Wily6tdwYL9mO_Uyddu0nUA&oe=6475BF49') no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        opacity: 0.3;
+    }
+    .container{
+        text-align: center;
+        /* border: 2px solid orange; */
+    }
+    .navigation{
+        display: flex;    
+        /* border: 2px solid grey;        */
+        position: absolute;
+        top: 10px;
+        right: 50px;
+        list-style: none;
+        padding: 20px;
+        margin: 2px;   
+    }
+    .navigation li a{
+        
+        padding: 0px 25px;
+        text-decoration: none;
+        color: white;
+        margin: 2px;               
+        transition: ease-in .2s;
+        width: 2px;
+        font-size: 17px;
+    }
+    .navigation li a:hover{   
+        color: red;
+        width: 10px;
+    }  
+    section{
+        /* border: 2px solid green; */
+        margin: 80px 230px;
+        height: 344px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .jdlogo{
+        width:80px;
+        height:80px;
+        position: absolute;
+        left: 20px;
+        top: 20px;
+    }
+    h1{    
+        font-size: 50px;
+    }
+    h2{
+        margin-top: 350px;
+        margin-bottom: 0px;
+        font-size: 30px;
+        padding: 30px;
+        text-align: center;
+        background-color: white;
+        color: rgb(43, 0, 255);
+        letter-spacing: 3px;
+    }
+    .computer img{
+        height: 240px;
+        width: 350px;
+        margin-top: 40px;
+        margin-left: 40px;
+        border-radius: 10px;
+        display: inline-block;
+        flex-direction: row;
+    }
+    .computer h4{
+        width: 280px;
+        margin: 10px;
+        margin-left: 55px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        color: rgb(89, 0, 255);
+        display: flex;
+    }
+    .computer p{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 600px;
+        margin: 30px;
+        padding: 30px;
+        position: absolute;
+        top: 60em;
+        left: 25em;
+    }
+    .bold1{
+        color: red;
+    }
+    .mechanical img{
+        height: 240px;
+        width: 350px;
+        position: absolute;
+        top: 82em;
+        right: 17px;
+        margin-top: 40px;
+        margin-right: 40px;
+        border-radius: 10px;
+        display: inline-block;
+        flex-direction: row;
+    }
+    .mechanical h4{
+        width: 280px;
+        margin: 10px;
+        margin-right: 55px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        color: rgb(89, 0, 255);
+        display: flex;
+        position: absolute;
+        top: 100em;
+        right: 15px;
+    }
+    .mechanical p{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 600px;
+        margin: 30px;
+        padding: 30px;
+        position: absolute;
+        top: 85em;
+        left: 29em;
+    }
+    .electrical img{
+        height: 240px;
+        width: 350px;
+        position: absolute;
+        top: 107em;
+        left: 17px;
+        margin-top: 40px;
+        margin-right: 40px;
+        border-radius: 10px;
+        display: inline-block;
+        flex-direction: row;
+    }
+    .electrical h4{
+        width: 280px;
+        margin: 10px;
+        margin-right: 55px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        color: rgb(89, 0, 255);
+        display: flex;
+        position: absolute;
+        top: 125em;
+        left: 15px;
+    }
+    .electrical p{
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 600px;
+        margin: 30px;
+        padding: 30px;
+        position: absolute;
+        top: 109em;
+        left: 25em;
+    }
+     h6{       
+        position: absolute;
+        top: 150em; 
+        left: 50em;       
+        width: 150px;
+        font-size: 15px ;
+        height: 30px;
+        justify-content: center;
+        border: 2px solid white;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        padding-top: 20px;
+        padding-right: 10px;
+        transition: ease-in-out .3s;
+    }
+    h6:hover{
+        background-color: rgb(55, 0, 255);
+    }
+    h6 img{
+       filter: invert(0.7);
+       height: 20px;
+       width: 20px;
+       margin: 0px 5px;
+    } 
+.main{
+    width: 300px;
+    height: 460px;
+    position: absolute;
+    right: 30px;
+    top: 80px;
+    background: red;
+    overflow: hidden;
+    background: url('background.jpg') no-repeat center / cover;
+    border-radius: 10px;
+    box-shadow: -0px 5px 10px #0a0a0a;
+
+}
+
+#chk{
+    display: none;
+}
+
+.signup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+label{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+input{
+    width: 200px;
+    height: 20px;
+    background: #e0dede;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button{
+    width: 220px;
+    height: 40px;
+    padding: 12px 0px;
+    margin: 10px auto;
+    justify-content: center;
+    display: flex;
+    color: #fff;
+    background-color: rgb(6, 9, 179);
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color: rgb(0, 98, 255);
+}
+
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-118px);
+    transition: .5s ease-in-out;    
+}
+
+.login label{
+    color: blue;
+    transform: scale(.6);    
+}
+
+#chk:checked ~ .login{
+    transform: translateY(-440px);
+}
+
+#chk:checked ~ .login label{
+    transform: scale(1);
+}
+
+#chk:checked ~ .signup label{
+    transform: translateY(.6);
+}
+
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+            <img class="jdlogo" src="https://jdcoem.ac.in/wp-content/uploads/2020/01/logo-new.png" alt="jd logo">
+
+        </header>
+        <section>
+            <h1>
+                WELCOME TO, <br>
+                JD COLLEGE OF ENGINEERING AND MANAGEMENT
+            </h1>
+            <p>"A Place to Grow, Learn and Thrive"<br>"Unlock Your Future. Discover Your Path at Our College."</p>
+        </section>
+        <hr>
+    </div>
+    <h2> BRANCHES</h2>
+    <div class="computer">
+        <img src="https://www.robotlab.com/hs-fs/hubfs/Code-on-Computer-Hero.gif?width=1200&name=Code-on-Computer-Hero.gif"
+            alt="computer branch">
+        <h4>"Unleash Your Inner Techno-Wizard!"</h4>
+        <p><b class="bold1">Computer engineering </b>is a branch of engineering that focuses on the design and
+            maintenance of computer systems, including both hardware and software. It combines the knowledge and skills
+            of electrical engineering and computer science to develop the best computer systems for use in a variety of
+            industries. Computer engineers may design and develop computer systems, create new computer software,
+            develop and maintain networks, and develop and maintain computer security systems. They may also work with
+            networks and computer systems to ensure that they are functioning properly and securely. Computer engineers
+            are responsible for developing and maintaining the hardware, software, and networks that enable the world to
+            communicate and share information.</p>
+    </div>
+    <div class="mechanical">
+        <img src="https://studyportals-cdn2.imgix.net/5721fb0458d28.jpg?max-w=660&max-h=532&fit=crop&auto=format,compress&q=40"
+            alt="mechanical">
+        <h4>"Success in mechanical engineering requires passion, dedication, and a never-ending thirst for learning"
+        </h4>
+        <p>
+            <b class="bold1">Mechanical engineering</b> is a branch of engineering that focuses on the design,
+            production, and operation of machinery. It applies the principles of engineering, physics, and materials
+            science for the design, analysis, manufacturing, and maintenance of mechanical systems. It encompasses a
+            wide range of topics including mechanics, kinematics, thermodynamics, materials science, structural
+            analysis, and electricity. Mechanical engineers use the core principles as well as other knowledge in the
+            field to design and analyze manufacturing plants, industrial equipment and machinery, heating and cooling
+            systems, motor vehicles, aircraft, watercraft, robotics, medical devices, weapons, and others.
+        </p>
+    </div>
+
+    <div class="electrical">
+        <img src="https://www.bangor.ac.uk/sites/default/files/styles/16x9_1100w/public/2020-05/Bangor_University_D2_S1_Canon_025%201_0.jpg?h=0f4230fa&itok=EQ1_eWMb"
+            alt="electrical">
+
+        <h4>"Powering the Future with Electrical Engineering"</h4>
+        <p> <b class="bold1"> Electrical engineering </b>is a field of engineering that deals with the study and
+            application of electricity, electronics, and electromagnetism. This field covers a wide range of
+            sub-disciplines including power, controls, telecommunications, signal processing, instrumentation, and
+            electronics. Electrical engineers are responsible for designing, developing, testing, and supervising the
+            manufacture of electrical equipment, such as motors, navigation systems, radars, and control systems. They
+            also work on projects that involve electrical power, such as the design of power grids, power transformers,
+            and other power distribution systems. Some electrical engineers specialize in areas such as renewable
+            energy, green energy, or smart grids. Electrical engineers may also be involved in research and development,
+            system analysis, and computer programming.</p>
+
+    </div>
+    <h6 class="show">
+        Show more
+        <img src="https://static.thenounproject.com/png/2623471-200.png" alt="Show more">
+    </h6>
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+
+        <div class="signup">
+            <form action="no-action.php">
+                <label for="chk" aria-hidden="true">Sign up</label>
+                <input type="text" name="txt" placeholder="Enrollment Number" required="">
+                <input type="text" name="txt" placeholder="Student ID" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="Password" name="pswd" placeholder="Password" required="">
+                <button>Sign up</button>
+            </form>
+        </div>
+        <div class="login">
+            <form action="no-action.php">
+                <label for="chk" aria-hidden="true">Login</label>
+                <input type="text" name="txt" placeholder="Enrollment Number" required="">
+                <input type="text" name="txt" placeholder="Student ID" required="">
+                <input type="email" name="email" placeholder="Email" required="">
+                <input type="Password" name="pswd" placeholder="Password" required="">
+                <button>Login</button>
+        </div>
+    </div>
+</body>
+
+</html>
